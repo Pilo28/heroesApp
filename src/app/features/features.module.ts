@@ -7,6 +7,7 @@ import { LayoutPageComponent } from './heroes/pages/layout-page/layout-page.comp
 import { ListPageComponent } from './heroes/pages/list-page/list-page.component';
 import { NewPageComponent } from './heroes/pages/new-page/new-page.component';
 import { SearchPageComponent } from './heroes/pages/search-page/search-page.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { SearchPageComponent } from './heroes/pages/search-page/search-page.comp
   ],
   imports: [
     CommonModule,
-    FeaturesRoutingModule
+    FeaturesRoutingModule,
+    SharedModule,
+    
   ]
 })
 export class FeaturesModule { }
