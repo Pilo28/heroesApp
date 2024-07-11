@@ -8,6 +8,8 @@ import { ListPageComponent } from './heroes/pages/list-page/list-page.component'
 import { NewPageComponent } from './heroes/pages/new-page/new-page.component';
 import { SearchPageComponent } from './heroes/pages/search-page/search-page.component';
 import { SharedModule } from '../shared/shared.module';
+import { MaterialModule } from '../utils/material/material.module';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,7 @@ import { SharedModule } from '../shared/shared.module';
     CommonModule,
     FeaturesRoutingModule,
     SharedModule,
-    
+    MaterialModule  
   ]
 })
 export class FeaturesModule { }
