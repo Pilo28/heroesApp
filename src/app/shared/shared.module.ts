@@ -5,6 +5,8 @@ import { HeaderComponent } from './pages/header/header.component';
 import { MaterialModule } from '../utils/material/material.module';
 import { RouterModule } from '@angular/router';
 import { CardHeroComponent } from './components/card-hero/card-hero.component';
+import { ImgHeroPipe } from './pipes/img-hero/img-hero.pipe';
+import { HeroDetailsComponent } from './components/hero-details/hero-details.component';
 
 
 
@@ -14,13 +16,15 @@ import { CardHeroComponent } from './components/card-hero/card-hero.component';
   declarations: [
     ErrorPageComponent,
     HeaderComponent,
-    CardHeroComponent
+    CardHeroComponent,
+    ImgHeroPipe,
+    HeroDetailsComponent
   ],
   imports: [
     CommonModule,
     MaterialModule,
     RouterModule
   ],
-  exports: [ ErrorPageComponent, HeaderComponent, CardHeroComponent]
+  exports: [ ErrorPageComponent, HeaderComponent, CardHeroComponent, ImgHeroPipe, HeroDetailsComponent]
 })
 export class SharedModule { }
