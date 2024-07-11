@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { CardHeroComponent } from './components/card-hero/card-hero.component';
 import { ImgHeroPipe } from './pipes/img-hero/img-hero.pipe';
 import { HeroDetailsComponent } from './components/hero-details/hero-details.component';
+import { GoBackDirective } from './directives/go-back.directive';
 
 
 
@@ -18,7 +19,8 @@ import { HeroDetailsComponent } from './components/hero-details/hero-details.com
     HeaderComponent,
     CardHeroComponent,
     ImgHeroPipe,
-    HeroDetailsComponent
+    HeroDetailsComponent,
+    GoBackDirective
   ],
   imports: [
     CommonModule,
